@@ -1,0 +1,27 @@
+.right-part .large {
+    animation: fadeInRevolve 3s ease-in-out;
+}
+
+.right-part .small {
+    animation: slideInFromRight 4s ease-in-out;
+}
+
+@keyframes fadeInRevolve {
+  from {
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(725%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
