@@ -99,6 +99,7 @@ a:hover {
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   min-width: 0;
   max-width: 100%;
   box-sizing: border-box;
@@ -107,4 +108,5 @@ a:hover {
 
 .web-project h1 {
   padding-bottom: 25px;
+  text-align: center;
 }
