@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
 html,
@@ -15,11 +16,11 @@ body {
 
 body {
   padding: 25px;
+  justify-content: flex-start;
 }
 
+
 /* 🔴 CSS Property name Error here 👇 */
-
-
 .checkout-container {
   height: 100%;
   display: flex;
@@ -33,6 +34,7 @@ body {
 
  h1 {
   text-align: center;
+  padding-bottom: 50px;
 }
 
 h2 {
@@ -41,7 +43,7 @@ h2 {
 }
 
 /* 🔴 CSS Syntax Error here 👇 */
-.web-project .checkout-container main {
+.checkout-container main {
   width: 100%;
   padding: 25px;
   display: flex;

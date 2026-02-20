@@ -1,0 +1,64 @@
+/* =============================================
+   LIGHTBOX OVERLAY
+   - Fixed position covers the entire viewport
+   - Semi-transparent dark background
+   - Starts hidden (display: none)
+   ============================================= */
+
+.lightbox  {
+  display: none;                  /* Hidden until triggered */
+  position: fixed;                /* Stays on screen regardless of scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Dark backdrop */
+  z-index: 9999;                  /* Sits on top of EVERYTHING */
+  
+  /* Center the video content */
+  justify-content: center;
+  align-items: center;
+}
+
+/* When active, switch to flex to enable centering */
+.lightbox.active {
+  display: flex;
+}
+
+/* The box containing the video + close button */
+.lightbox-content {
+  position: relative;
+  width: 90%;
+  max-width: 960px;               /* Cap width on large screens */
+}
+
+/* The video element itself */
+#lightbox-video {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* Close button — top-right corner */
+#lightbox-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 1;
+  
+  /* Smooth hover effect */
+  transition: background 0.2s ease;
+}
+
+#lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

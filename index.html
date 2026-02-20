@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Christopher's Personal Site</title>
     <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/lightbox.css">
   </head>
 
   <body>
@@ -15,7 +16,33 @@
       </div>
       <div class="headline-right">
         <h1>Christopher Stallaby</h1>
-            <p> <em> Application Developer </em> </p>
+          <p><em>Application Developer</em></p>
+          <p>
+            My professional foundation is built on <strong>SQL and DAX</strong>, where I have developed strong 
+            expertise in data querying, transformation, and analytics. Alongside this, I have cultivated 
+            mid-level proficiency in <strong>HTML, CSS, and JavaScript</strong>, and I am actively deepening 
+            my knowledge of modern web development practices. I am also building my <strong>Python</strong> 
+            skills with a focus on practical application development, and I hold working knowledge of 
+            <strong>C#</strong> from prior coursework in programming fundamentals — where I was introduced 
+            to core concepts such as object-oriented design, classes, arrays, and libraries.
+          </p>
+          <p>
+            More recently, I have begun exploring <strong>iOS Development</strong> through Angela Yu's 
+            complete iOS and Swift bootcamp on Udemy, which has introduced me to app design principles, 
+            layout configuration, and Swift programming concepts. I have built several small apps through 
+            this course, a few of which you can find under <a href="#mobile-projects">Mobile Projects below</a>.
+          </p>
+          <p>
+            Web Development and Python remain my primary areas of active growth and I am committed to expanding both consistently.
+          </p>
+          <br>
+          <p>
+            Outside of tech, I enjoy playing basketball with friends, reading (or more often listening to) 
+            <em>The Lord of the Rings</em> on Audible, and practicing archery in my backyard — with dreams 
+            of bow hunting someday. I also enjoy the occasional video game; <em>Destiny</em> was a longtime 
+            favorite.
+          </p>
+            <!-- <p> <em> Application Developer </em> </p>
             <p>
               I have begun learning to build apps by progressing through Angela Yu's iOS & Swift - The Complete iOS App Development Bootcamp on Udemy. This course has taught me design principles, layout and orientation configuration, along with more advanced programming concepts. I have built 6 apps so far with more on the way. 
               You will find a few of my apps on My Work page. During my college education I took a course on programming fundamentals in which I learned how to manipulate objects such as classes, libraries, arrays and vectors in order to achieve my goal with the program. I have completed other overviews on Web Development as well.
@@ -23,7 +50,7 @@
             <br> 
             <p>
               In my spare time I enjoy playing basketball with my friends. Reading The Lord of the Rings, or usually listening on Audible. I often will go to my backyard and set up my target to hone my arhcery skills. I'd like to one day go bow hunting. I also dabble in the odd video game every now and then. Destiny was one of my favorites.
-            </p>
+            </p> -->
       </div>
     </div>
 
@@ -32,16 +59,76 @@
     <div class="about-education">
       <div class="about-links">
         <h2>About Me</h2>
-        <a href="Mobile Apps.html">Mobile Apps I've Built</a>
-        <br>
-        <a href="Web Projects.html">Web Projects coming soon</a>
-        <br>
-        <a href="Contact Info.html">Contact Me</a>
-        <br>
-        <a href="My Hobbies.html">My Hobbies</a>
-      </div>
+        <div class="contact-and-hobbies">
+          <a href="Contact Info.html">Contact Me</a>
+          <!-- <br> -->
+          <a href="My Hobbies.html">My Hobbies</a>
+        </div>
+        <div class="programming-portfolio">
+          <div class="web-projects">
+            <h3>Web Projects</h3>
+            <br>
+            <a href="CSS-Checkout-Page.html">Static Checkout Page</a>
+            <br>
+            <a href="Animated-Robot.html">Animated Robot</a>
+            <br>
+            <a href="Developer-Note.html">Developer Note</a>
+            <br>
+            <a href="SaaS-Landing-Page.html">Landing Page Mockup</a>
+          </div>
+          <div id="mobile-projects" class="mobile-projects">
+            <h3>Mobile Projects</h3>
+            <br>
+              <!-- 
+                The key is: 
+                - href points to your video file (graceful fallback if JS is disabled)
+                - class="video-trigger" is what our JS will look for
+                - data-video lets us pass the file path cleanly
+              -->
+              <a href="My Apps/I am a Child of God.mov"
+                class="video-trigger" 
+                data-video="My Apps/I am a Child of God.mov">
+                ▶ Static Display App (Child of God)
+              </a>
+              <br>
+              <a href="My Apps/8 Ball.mov" 
+                class="video-trigger" 
+                data-video="My Apps/8 Ball.mov">
+                ▶ Magic 8 Ball App
+              </a>
+              <br>
+              <a href="My Apps/Dicee.mov" 
+                class="video-trigger" 
+                data-video="My Apps/Dicee.mov">
+                ▶ Roll The Dice App
+              </a>
+              <br>
+              <a href="My Apps/Egg Timer.mov" 
+                class="video-trigger" 
+                data-video="My Apps/Egg Timer.mov">
+                ▶ Cook Eggs
+              </a>
+              <br>
+              <a href="My Apps/Xylophone.mov" 
+                class="video-trigger" 
+                data-video="My Apps/Xylophone.mov">
+                ▶ Play The Xylophone
+              </a>
+              <!-- The lightbox overlay (hidden by default) -->
+              <div id="video-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Video Player">
+                <div class="lightbox-content">
+                  <button id="lightbox-close" aria-label="Close video">&times;</button>
+                  <video id="lightbox-video" controls playsinline>
+                  <!-- Source is injected by JavaScript -->
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
 
-      <!-- <hr> -->
+
+          </div>
+        </div>        
+      </div>
 
       <div class="education-links">
         <h2>Education</h2>
@@ -101,24 +188,24 @@
 
     <div class="skills">
     <h2>Skills</h2>
-    <table cellspacing="10px">
-      <tbody>
-        <tr>
-          <td class="text" >
-            Javascript   ⭐⭐⭐
-            <br>
-            Python   ⭐⭐⭐
-          </td>
-          <td class="text" >
-            Web Development   ⭐⭐⭐
-            <br>
-            iOS Development   ⭐⭐⭐
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <table cellspacing="10px">
+        <tbody>
+          <tr>
+            <td class="text" >
+              Javascript   ⭐⭐⭐
+              <br>
+              Python   ⭐⭐⭐
+            </td>
+            <td class="text" >
+              Web Development   ⭐⭐⭐
+              <br>
+              iOS Development   ⭐⭐⭐
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    
+     
+    <script src="./Scripts/lightbox.js"></script>  
   </body>
-
 </html>
