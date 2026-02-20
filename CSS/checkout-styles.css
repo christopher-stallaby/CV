@@ -13,10 +13,14 @@ body {
   color: white;
 }
 
+body {
+  padding: 25px;
+}
+
 /* 🔴 CSS Property name Error here 👇 */
 
 
-.content {
+.checkout-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -24,6 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #030a1e;
+  border-radius: 25px;
 }
 
  h1 {
@@ -36,9 +41,9 @@ h2 {
 }
 
 /* 🔴 CSS Syntax Error here 👇 */
-main {
+.web-project .checkout-container main {
   width: 100%;
-  padding-top: 60px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 60px;

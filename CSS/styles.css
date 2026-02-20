@@ -86,13 +86,25 @@ a:hover {
 
 .showcase {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
   padding: 20px;
   align-items: start;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .showcase .web-project {
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+.web-project h1 {
+  padding-bottom: 25px;
 }
