@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copywriting Portfolio</title>
+    <link rel="stylesheet" href="/CV/CSS/portfolio-styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Copywriting Portfolio</h1>
+    </header>
+
+    <main class="portfolio-container">
+      <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <a
+          href="Copy-Portfolio/remember-me.html"
+          class="portfolio-card"
+          data-title="Remember Me"
+          data-type="Group Lead Notes"
+          data-preview="Matthew 26 is a chapter that begins solemnly with Jesus prophesying about His coming death at the hands of sinful men..."
+        >
+          <div class="card-preview-area">
+            <p>Matthew 26 begins with Jesus prophesying...</p>
+          </div>
+          <div class="card-label">
+            <h3>Remember Me</h3>
+            <span>Group Lead Notes</span>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a
+          href="Copy-Portfolio/prayer-constant-conversation.html"
+          class="portfolio-card"
+          data-title="Prayer - A Constant Conversation"
+          data-type="Blog Post"
+          data-preview="Simple conversation, as if every time we speak God is listening attentively..."
+        >
+          <div class="card-preview-area">
+            <p>
+              Simple conversation, as if every time we speak God is listening
+              attentively...
+            </p>
+          </div>
+          <div class="card-label">
+            <h3>Prayer - A Constant Conversation</h3>
+            <span>Blog Post</span>
+          </div>
+        </a>
+
+        <!-- Additional cards can be added here following the same structure -->
+        <!-- Card 3 -->
+        <a
+          href="Copy-Portfolio/glorious-privilege.html"
+          class="portfolio-card"
+          data-title="A Glorious Privilege"
+          data-type="Blog Post"
+          data-preview="Peace is not the absence of conflict, but the presence of God..."
+        >
+          <div class="card-preview-area">
+            <p>Free Will is God's gift to human beings..</p>
+          </div>
+          <div class="card-label">
+            <h3>A Glorious Privilege</h3>
+            <span>Blog Post</span>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a
+          href="Copy-Portfolio/beauty-of-jesus.html"
+          class="portfolio-card"
+          data-title="Beauty of Jesus"
+          data-type="Group Lead Notes"
+          data-preview="Good looks won't save a bad character..."
+        >
+          <div class="card-preview-area">
+            <p>Good looks won't save a bad character...</p>
+          </div>
+          <div class="card-label">
+            <h3>Beauty of Jesus</h3>
+            <span>Sermon Notes</span>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a
+          href="Copy-Portfolio/thankfulnes.html"
+          class="portfolio-card"
+          data-title="Thankfulness"
+          data-type="Group Lead Notes"
+          data-preview="There is a difference in praying to God and complaining to Him."
+        >
+          <div class="card-preview-area">
+            <p>
+              There is a difference in praying to God and complaining to Him.
+            </p>
+          </div>
+          <div class="card-label">
+            <h3>Thankfulness</h3>
+            <span>Group Lead Notes</span>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a
+          href="Copy-Portfolio/biblical-case-for-guns.html"
+          class="portfolio-card"
+          data-title="Biblical Grounds for the Second Amendment"
+          data-type="Blog Post"
+          data-preview="A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed"
+        >
+          <div class="card-preview-area">
+            <p>
+              A well regulated Militia, being necessary to the security of a
+              free State, the right of the people to keep and bear Arms, shall
+              not be infringed...
+            </p>
+          </div>
+          <div class="card-label">
+            <h3>Biblical Case for Guns</h3>
+            <span>Blog Post</span>
+          </div>
+        </a>
+
+        <!-- Card 7 -->
+        <a
+          href="Copy-Portfolio/suffering.html"
+          class="portfolio-card"
+          data-title="Suffering"
+          data-type="Sermon Notes"
+          data-preview="Count it all joy, my brothers, when you meet trials of various kinds."
+        >
+          <div class="card-preview-area">
+            <p>
+              Count it all joy, my brothers, when you meet trials of various
+              kinds...
+            </p>
+          </div>
+          <div class="card-label">
+            <h3>Suffering</h3>
+            <span>Sermon Notes</span>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <!-- Modal Overlay -->
+    <div id="portfolio-modal" class="modal-overlay">
+      <div class="modal-content">
+        <button id="close-modal" class="close-btn">&times;</button>
+        <h2 id="modal-title"></h2>
+        <p id="modal-type" class="modal-type-label"></p>
+        <hr />
+        <div id="modal-body" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="/CV/Scripts/portfolio-scripts.js"></script>
+  </body>
+</html>
